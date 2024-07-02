@@ -1,0 +1,95 @@
+body {
+    margin: 50px; /* Aquí puedes ajustar el tamaño del margen según tus necesidades */
+    font-size: 30px
+}
+h1 {
+    text-align: center;
+}
+button
+{
+    text-align: center;
+  }
+
+
+
+input:enabled {
+    color: rgb(85, 33, 33);
+    padding: 8px;
+  }
+
+  
+input:disabled {
+    color: #aaa;
+  }
+
+  /* Párrafos impares */
+p:nth-of-type(2n + 1) {
+    color: red;
+  }
+  
+  /* Párrafos pares */
+  p:nth-of-type(2n) {
+    color: blue;
+  }
+  
+  /* Primer párrafo */
+  p:nth-of-type(1) {
+    font-weight: bold;
+  }
+  :scope {
+    background-color: rgb(103, 182, 247);
+  }
+  main :only-of-type {
+    color: red;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 1em;
+  }
+  
+  input {
+    border: 1px solid black;
+  }
+  
+  input:in-range {
+    background-color: rgb(245, 245, 245);
+  }
+  
+  input:out-of-range {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 2px solid rgb(0, 0, 0);
+  }
+  
+  input:in-range + label::after {
+    content: "bien.";
+  }
+  
+  input:out-of-range + label::after {
+    content: "¡fuera de rango!";
+  }
+  p:last-child {
+    color: lime;
+    background-color: black;
+    padding: 5px;
+  }
+
+  input:default {
+    box-shadow: 0 0 2px 1px coral;
+  }
+  
+  input:default + label {
+    color: coral;
+  }
+  a:link {
+    color: blue;
+  } /* Enlaces no visitados */
+  a:visited {
+    color: purple;
+  } /* Enlaces visitados */
+  a:hover {
+    background: yellow;
+  } /* El usuario esta sobre el enlace */
+  a:active {
+    color: lime;
+  } /* Enlaces activos */
